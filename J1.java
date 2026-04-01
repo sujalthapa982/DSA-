@@ -1,13 +1,18 @@
-import java.util.Scanner;
 
 class J1{
-    public static void sum(int a, int b){
-        System.out.println("the sum of a and b is: "+(a+b));
+    public static void countnum(int arr[],int a){
+        int count =0;
+        for(int i=0; i<arr.length; i++){
+            if(arr[i] == a){
+                count++;
+            }
+        }
+        System.out.println(count);
     }
+    
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        sum(a,b);
+        int a = 3;
+        int arr[] = {1,3,3,3,3};
+        countnum(arr, a);
     }
 }
